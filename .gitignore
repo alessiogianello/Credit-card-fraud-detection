@@ -1,12 +1,5 @@
 # Dataset
-*.csv
-*.tsv
-*.parquet
-*.feather
-*.h5
-*.hdf5
-*.pkl
-*.pickle
+data/
 
 # macOS
 .DS_Store

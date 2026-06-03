@@ -6,7 +6,7 @@ Binary classification project to detect fraudulent credit card transactions usin
 
 **Source:** Credit card transactions by European cardholders, 2023  
 **Size:** 568,630 records — 30 features  
-**Dataset file:** `creditcard_2023.csv` (not tracked in git)
+**Dataset file:** `data/creditcard_2023.csv` (not tracked in git)
 
 | Column | Description |
 |--------|-------------|
@@ -20,7 +20,9 @@ The dataset is **balanced** (50% fraud / 50% legit), with no missing values and 
 
 ```
 .
-├── main.ipynb       # Full analysis and model training
+├── data/
+│   └── creditcard_2023.csv   # not tracked in git
+├── main.ipynb                # Full analysis and model training
 ├── .gitignore
 └── README.md
 ```
