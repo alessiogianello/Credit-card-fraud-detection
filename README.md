@@ -60,6 +60,12 @@ Best overall: **Random Forest** (Precision 0.9997, Recall 1.0, F1 0.9999, ROC AU
 
 Hyperparameter tuning was performed with `RandomizedSearchCV` using PR AUC as scoring metric (more appropriate than accuracy on a fraud detection task).
 
+> **Note on dataset balance:** this dataset is artificially balanced (50/50). Real-world fraud detection typically involves heavily imbalanced data (~0.1–0.5% fraud rate), where techniques such as SMOTE, `class_weight='balanced'`, and threshold tuning become critical. The near-perfect scores here reflect the simplified class distribution, not production-level difficulty.
+
+### Feature importance
+
+Feature importance was analysed for Random Forest and XGBoost to identify which anonymized PCA components contribute most to fraud detection.
+
 ### Evaluation metrics
 
 Since accuracy is misleading on fraud detection tasks, models are evaluated on:
